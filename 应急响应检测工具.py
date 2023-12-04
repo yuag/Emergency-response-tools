@@ -218,7 +218,7 @@ class Ui_MainWindow(object):
                                 except Exception as e:
                                     QMessageBox.critical(None, "Error", f"读取文件失败 '{file_path}': {e}")
 
-                    # Display matching results in the text browser
+              
                     self.textBrowser.setPlainText("\n".join(matched_results))
 
             except Exception as e:
