@@ -196,7 +196,7 @@ class Ui_MainWindow(object):
                     rule_file_path = os.path.join(rule_folder, rule_file)
                     try:
                         compiled_rule = yara.compile(filepath=rule_file_path)
-                        compiled_rules.append((compiled_rule, rule_file))  # Store both rule and filename
+                        compiled_rules.append((compiled_rule, rule_file))  # 
                     except yara.Error as e:
                         QMessageBox.critical(None, "Error", f"编译YARA规则失败 '{rule_file}': {e}")
 
