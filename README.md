@@ -32,14 +32,14 @@
 
 yara脚本（支持检查shell，勒索病毒，挖矿，等）
 
------------------------------------------------------------
+
 yara脚本合集：
 
 https://github.com/InQuest/awesome-yara/tree/master
 
 https://segmentfault.com/q/1010000043271331
 
-------------------------------------------------------
+
 
 
 <br>
@@ -56,6 +56,7 @@ libyara.dll 提示找不到 。
 把这里的libyara.dll复制到（python3根目录）正确目录就可以了
 
 参考：https://blog.csdn.net/weixin_43781139/article/details/131087788
+
 
 
 
