@@ -1,4 +1,4 @@
-# 应急响应检测工具
+# win应急响应检测工具
 
 
 
@@ -60,4 +60,109 @@ libyara.dll 提示找不到 。
 
 
 
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+=======================================分割线===============================================
+
+# Linux应急响应检测工具
+
+<img width="704" alt="image" src="https://github.com/yuag/Emergency-response-tools/assets/34123873/ae16d38e-de93-4eab-94dd-6077d9646c3b">
+
+
+<br>
+<br>
+
+<img width="870" alt="image" src="https://github.com/yuag/Emergency-response-tools/assets/34123873/12e01fa8-cc3f-4ae8-9aad-7210671158e8">
+
+
+
+
+
+
+<br>
+<br>
+
+# 功能
+
+ 1.  获取对外网络连接情况
+ 2.  显示进程
+ 3.  任务启动项 
+ 4.  检查异常端口
+ 5.  检查定时任务 
+ 6.  监控与目标IP通信的进程
+ 7.  CPU降序排序
+ 8.  查询历史命令
+ 9.  7天内被修改过的文件
+ 10. 登录记录
+ 11. 多少IP在爆破主机的root帐号
+ 12. 哪些IP在爆破
+ 13. 爆破用户名字典是什么
+ 14. 登录成功的日期、用户名、IP：
+ 15. 查询sudo权限账户
+ 16. 使用YARA规则检测文件
+ 17. 一键执行所有命令并导出
+ 18. 查找72小时内新增的文件            
+ 0.  退出
+
+
+
+
+
+<br>
+<br>
+
+
+# 遇到的错误
+
+
+ubuntu
+
+
+安装yara错误
+OSError: /usr/lib/libyara.so: cannot open shared object file: No such file or directory
+
+libyara.so文件复制到这个目录就可以
+/usr/lib/libyara.so
+
+root 用户权限
+cp -r libyara.so /usr/lib/
+
+<br>
+<br>
+
+
+
+
+<br>
+<br>
+
+cenetos
+
+cenetos7 直接安装yara安装不成功 只能虚拟环境才成功。 后续测8不会报错。
+
+使用虚拟环境（可选）：
+
+如果您尚未使用虚拟环境，请考虑创建一个虚拟环境来隔离该项目的 Python 环境：
+
+
+python3 -m venv myenv
+source myenv/bin/activate
+
+
+
+
+
+<br>
+<br>
+注意：选择一个命令 16. 使用YARA规则检测文件
+
+路径一定不要加 单/双引号 不然会报错误
 
